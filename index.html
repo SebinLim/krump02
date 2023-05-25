@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WHAT YOU KNOW ABOUT THE KRUMP</title>
+	<link rel='icon' type='image.png' 
+	sizes='16x16' href="image/image.png">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{font-size: 16px; scroll-behavior: smooth;}
+
+		body,h1,h2{margin: 0;}
+
+		.nav{background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.1));}
+
+		ul{list-style-type: none; display: flex; justify-content: space-around; }
+
+		a{display: block; padding:0;
+			 text-decoration: none;
+			 font-family: 'Bebas Neue', sans-serif;
+			 color: white; font-size: 1.5rem;}
+		a:hover{color: #ffdd00;}
+
+		.menu{width: 640px; height: 2rem; position: fixed; top: 0; padding: 0; margin: 4px; z-index: 2}
+		.wrapper
+		{width: 100%; margin: auto; padding: 0px;}
+
+		.flex01
+		{display: flex; justify-content: space-around;}
+		.flex02
+		{display: flex; justify-content: flex-start;}
+		.flex03
+		{display: flex; justify-content: flex-end;}
+
+		section{background: black;}
+
+		video{width: 100%; height: 840px; object-fit: cover; overflow: hidden; margin: 0px auto; position: relative;}
+		.title{height: 840px;}
+		.videotext{position: absolute; color: white; top: 50%; right:16%; margin-top: -50px; text-align: right;}
+
+		h1{font-size: 8rem;}
+
+		.videotext p {font-size: 6rem; font-family: 'Bebas Neue', sans-serif; line-height: 6rem; margin:0;}
+
+		.introbg{width: 60%; height: auto; position: absolute; top: 86rem; left: 22rem;}
+
+		.introvideo{width: 480px; height: 270px; margin: 0;}
+
+		.wrap{width: 1200px; margin: auto; padding: 200px 0px; letter-spacing: -0.2rem; word-break: keep-all;}
+		/*h2를 둘러싼 wrap에 배경색을 주는 대신 마진값만 없애버리고 오히려 wrap을 담고있는 section에 배경색을 주면 여백이 남지 않는 시원시원한 구성이 완성됩니다! 이해가 안 된다면 당장 section backgroundcolor:gray를 wrap에 옮겨두고 wrap의 margin:auto를 없애보세요.*/
+		.initial{color: white; font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.3rem; line-height: 8rem; margin-right: 100px;}
+		h2{font-size: 2rem; color: #ffdd00;}
+		.titlekr{font-family: 'Noto Sans KR', sans-serif; font-weight: 500;}
+		.titleeng{font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.1rem; margin-top: 20px; margin-bottom: 5px;}
+
+	p{font-size: 1rem; color: white; letter-spacing: -1px; line-height: 2rem; font-family: 'Noto Sans KR', sans-serif; font-weight: 400;}
+	.emph{color: #ffdd00;}
+
+.leftreveal{opacity: 0; position: relative;
+	animation: rightreveal 1s forwards;
+	animation-delay: 0.1s;}
+.rightreveal{opacity: 0; position: relative;
+	animation: leftreveal 1s forwards;
+	animation-delay: 0.1s;}
+.topreveal{opacity: 0; position: relative;
+	animation: topreveal 1s forwards;
+	animation-delay: 0.1s;}
+
+@keyframes rot{
+			to{transform: rotateX(180deg);}
+}
+
+@keyframes rightreveal{
+			from{right: 50px; opacity: 0;}
+			to{right: 0px; opacity: 1;}
+}
+@keyframes leftreveal{
+			from{left: 50px; opacity: 0;}
+			to{left: 0px; opacity: 1;}
+}
+@keyframes topreveal{
+			from{top: 100px; opacity: 0;}
+			to{top: -60px; opacity: 1;}
+}
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class='wrapper flex01'>
+			<ul class=' menu flex01'>
+				<li><a href='#intro'>INTRO</a></li>
+				<li><a href='#history'>HISTORY</a></li>
+				<li><a href='#term'>TERM</a></li>
+				<li><a href='#crew'>CREW</a></li>
+			</ul>
+		</div>
+	</div>
+	<section class="title">
+		<video muted autoplay loop>
+			<source src="video/titlevideo.mp4" type="video/mp4">
+		</video>
+		<div class="videotext">
+			<p>WHAT YOU KNOW<br>ABOUT THE</p><h1>KRUMP</h1>
+		</div>
+	</section>
+	<section style="height: 1800px;">
+		<img class="introbg" src="image/introbg.png">
+	<div class="wrap flex02">
+		<h1 class="wow initial leftreveal">
+		<span class="emph">K</span>INGDOM<br>
+		<span class="emph">R</span>ADICALLY<br>
+		<span class="emph">U</span>PLIFTED<br>
+		<span class="emph">M</span>IGHTY<br>
+		<span class="emph">P</span>RAISED</h1>
+		<div class="wow rightreveal" style="margin-top: 50px;">
+			<a id="intro">
+			<h2 style="top: 20%; margin-bottom: 30px;">크럼프란?</h2>
+			<p>악명 높은 범죄 발생률과 불안정한 정세를 자랑하던 로스앤젤레스 사우스 센트럴의<br>흑인 갱들이 더 이상 범죄를 저지르지 않고 살아남기 위한 수단으로 만들어진 춤.</p>
+			<p>에너지와 감정을 표현하는 춤이므로 전신을 크게 쓰는 공격적인 움직임이 눈에 띄지만<br>최근엔 공격적이라는 단편적인 이미지에서 벗어나 감정과 마음의 외침을 담아 춤추는<br>표현적이고 자유로운 댄스 장르로 확립되어 나 자신을 표현하는 스타일로 인식된다.</p>
+			<p>파워/에너지/창조력/발상/캐릭터 등 자신의 생활방식이나 가치관을 마음껏<br>표출해서 보는 사람들로 하여금 매료시키는 것이 KRUMP라는 장르이다.</p>
+			</a>
+		</div>
+	</div>
+	<div class="wrap flex03">
+		<div>
+			<iframe class="introvideo" src="https://www.youtube.com/embed/MQiP8pGbu5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<h2 class="emph titleeng">BATTLE</h2>
+			<p style="margin:0;">이름에서 알 수 있다시피 피튀기는 총격전 대신 각자의 댄스 무브를 뽐내<br>승패를 가리는 자리. 다른 댄스 장르의 배틀에 비해 두드러지는 특징으로<br>상대방의 몸에 터치를 하는 Beef 문화를 들 수 있다.</p>
+		</div>
+		<div style="margin-left: 10px;">
+			<iframe class="introvideo" src="https://www.youtube.com/embed/VqBSUb5h14c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<h2 class="emph titleeng">SESSION</h2>
+			<p style="margin:0;">여러 명의 댄서가 모여 각자의 춤을 보여주는 자리. 다른 댄스 장르에선<br>잼이라고도 한다. 관중들이 큰 목소리로 응원이나 리액션을 보내면서<br>댄서와 에너지를 주고받는데, 이것을 Hype라고 한다.</p>
+		</div>
+	</div>
+	</section>
+<section>
+	<a id="history">
+		<div class="wrap" style="text-align: center; padding: 120px 0px;">
+		<h2>크럼프의 시작, 클라우닝</h2>
+		<p>50년도 채 되지 않아 비교적 짧은 크럼프의 역사는 다름아닌 한 광대로부터 시작되었다.</p>
+		<img src="image/tommy.png" style="width: 40%;">
+		<div class="wow topreveal" style="position: relative; top: -60px;">
+			<h2 class="titleeng" style="font-size: 5rem;">TOMMY THE CLOWN</h2>
+			<p>1990년대 초 로스엔젤레스 사우스 센트럴에는 마약, 빈곤, 폭력, 범죄가 셀 수 없이 발생하고 있었다.<br>그러던 와중 마약 딜러였던 토미 더 클라운(TOMMY THE CLOWN)이 가혹한 환경에서 힘겹게 살아가는 아이들을<br>기쁘게 하기 위해 광대 분장을 하고 클라운 댄스(Clown Dance)를 선보였다. 이 클라운 댄스가 큰 인기를 끌며<br>아이들은 물론 성인들도 이 춤을 따라 추기 시작했다.</p>
+		</div>
+	</div>
+	</a>
+	<div class="flex02" style="text-align: left;">
+		<img src="image/his01.png">
+		<div style=" margin-left:100px; padding: 130px 0;">
+			<h2 class="wow rightreveal">위험하고 거친<br>범죄의 삶 대신</h2>
+		</div>
+	</div>
+	<div class="flex03" style="text-align: right;">
+		<div style=" margin-right:100px; padding: 130px 0;">
+			<h2 class="wow leftreveal">'춤을 춘다'라는<br>새로운 선택지로.</h2>
+		</div>
+		<img src="image/his02.png">
+	</div>
+</section>
+	
+<script src="wow.js"></script>
+<script>new WOW().init();</script>
+
+</body>
+</html>
